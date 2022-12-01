@@ -19,7 +19,7 @@ const Team = () => {
       title: 'Software Engineer',
       headshot: Jordan,
       github: 'https://github.com/gpys',
-      linkedin: 'https://www.linkedin.com/',
+      linkedin: 'https://www.linkedin.com/jordanrjeter/',
     },
     {
       teammembername: 'Cavin Park',
