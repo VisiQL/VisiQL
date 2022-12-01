@@ -2,7 +2,7 @@ import React from 'react';
 import Kelly from '../assets/Kelly.jpg';
 import Jordan from '../assets/Jordan.jpg';
 import Cavin from '../assets/Cavin.jpg';
-import Rebecca from '../assets/Rebecca.png';
+import Rebecca from '../assets/Rebecca.jpg';
 import TeamCards from './TeamCards';
 
 const Team = () => {
