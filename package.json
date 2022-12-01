@@ -5,7 +5,7 @@
   "main": "./src/client/index.js",
   "proxy": "https//www.visiql.ml",
   "scripts": {
-    "start": "node src/server/server.ts src/server/routes/graphqlRouter.ts",
+    "start": "node src/server/server.js src/server/routes/graphqlRouter.ts",
     "build": "webpack serve",
     "dev": "NODE_ENV=development webpack serve --open --hot & nodemon src/server/server.ts src/server/routes/graphqlRouter.ts",
     "test": "jest --forceExit",
