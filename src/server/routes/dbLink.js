@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express';
+const express = require('express');
 const router = express.Router();
 const dbLinkController = require('../controllers/dbLinkController');
 const dbSchemaController = require('../controllers/dbSchemaController');
@@ -38,4 +38,4 @@ router.post(
   }
 );
 
-// module.exports = router;
+module.exports = router;

@@ -1,7 +1,7 @@
-import express, { Request, Response, Router } from 'express';
+const express = require('express');
 const jwt = require('jsonwebtoken');
 const path = require('path');
-const router: Router = express.Router();
+const router = express.Router();
 const authController = require('../controllers/authController');
 const testController = require('../controllers/testController');
 const userController = require('../controllers/userController');
@@ -20,8 +20,8 @@ router.post('/signup', userController.signUp, (req, res) => {
   return res.status(201).json(res.locals.signedUp);
 });
 
-router.post('/login', userController.login, (req: Request, res: Response) => {
+router.post('/login', userController.login, (req, res) => {
   return res.status(200).json(res.locals.loggedIn);
 });
 
-// module.exports = router;
+module.exports = router;

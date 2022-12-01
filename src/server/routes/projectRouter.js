@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express';
+const express = require('express');
 const router = express.Router();
 const projectController = require('../controllers/projectController');
 
@@ -18,4 +18,4 @@ router.delete('/delete/:id', projectController.deleteProject, (req, res) => {
   return res.status(200).json(res.locals);
 });
 
-// module.exports = router;
+module.exports = router;
