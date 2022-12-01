@@ -66,6 +66,11 @@ const config = {
     new HtmlWebpackPlugin({ template: './src/client/index.html' }),
     new MiniCssExtractPlugin(),
   ],
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+},
 };
 
 module.exports = config;
